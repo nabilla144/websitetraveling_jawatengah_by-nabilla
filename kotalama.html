@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Kota Lama</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"> <!-- Fancybox CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Traveling Jateng</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="gallery-menu">
+                        <a href="#">Galeri Wisata</a>
+                        <ul class="dropdown-content">
+                            <li><a href="marina.html">Pantai Marina</a></li>
+                            <li><a href="celosia.html">Celosia</a></li>
+                            <li><a href="umbul.html">Umbul Sidomukti</a></li>
+                            <li><a href="saloka.html">Saloka</a></li>
+                            <li><a href="borobudur.html">Candi Borobudur</a></li>
+                            <li><a href="kotalama.html">Wisata Kota Lama</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="img/kotalama.jpg" alt="Wisata Kota Lama">
+        <div class="banner-content">
+            <h1>Wisata Kota Lama</h1>
+        </div>
+    </section>
+
+    <!-- Konten Utama -->
+    <main class="content container">
+        <h2>Sejarah Kota Lama</h2>
+        <p>
+            Kota Lama Semarang, juga dikenal sebagai "Little Netherlands," adalah sebuah kawasan bersejarah di Semarang, Jawa Tengah, yang mempertahankan banyak bangunan kolonial Belanda. Area ini mencerminkan keindahan arsitektur Eropa abad ke-18 dengan jalan-jalan kecil yang dipenuhi dengan bangunan bersejarah yang indah.
+        </p>
+        <img src="img/kota-lama-semarang-malam-hari.jpg" alt="Bangunan Bersejarah Kota Lama" class="zoomable">
+        
+        <h2>Daya Tarik Utama</h2>
+        <p>
+            Beberapa daya tarik utama di Kota Lama termasuk Gereja Blenduk, bangunan gereja tertua di Jawa Tengah yang masih digunakan, dan Pabrik Rokok Praoe Lajar. Pengunjung juga dapat menikmati berbagai kafe dan restoran dengan nuansa vintage yang menawarkan pengalaman kuliner yang unik.
+        </p>
+        <img src="img/blenduk-37d63c1b1baa556b3f68f5edaaae2255.jpg" alt="Gereja Blenduk" class="zoomable">
+
+        <h2>Aktivitas Wisata</h2>
+        <p>
+            Kota Lama menawarkan berbagai aktivitas wisata, mulai dari tur berjalan kaki yang dipandu untuk menjelajahi sejarah kawasan ini hingga fotografi dengan latar belakang bangunan-bangunan bersejarah. Setiap sudut di Kota Lama adalah tempat yang sempurna untuk berfoto.
+        </p>
+        <img src="img/202302110002-main.jpg" alt="Tur Jalan Kaki di Kota Lama" class="zoomable">
+    </main>
+
+    <!-- Galeri Kota Lama -->
+    <section class="content container">
+        <h2>Galeri Kota Lama</h2>
+        <div class="gallery">
+            <a href="img/kotalama.jpg" data-fancybox="gallery">
+                <img src="img/kotalama.jpg" alt="Gambar 1">
+            </a>
+            <a href="img/Tukang_Becak_di_Kota_Lama_Semarang.jpg" data-fancybox="gallery">
+                <img src="img/Tukang_Becak_di_Kota_Lama_Semarang.jpg" alt="Gambar 2">
+            </a>
+            <a href="img/202302110002-main.jpg" data-fancybox="gallery">
+                <img src="img/202302110002-main.jpg" alt="Gambar 3">
+            </a>
+        </div>
+    </section>
+
+    <!-- Tombol Kembali ke atas -->
+    <div class="back-to-top-container">
+        <a href="#top" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Traveling Jateng. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="https://web.facebook.com/login/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/nbllafdh_/" target="_blank"><i class="fab fa-instagram"></i></a></li>   
+            </ul>
+        </div>
+    </footer>
+    
+
+    <!-- Script untuk Slick Carousel dan Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initialize Slick Carousel
+            $('.gallery').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: '<button type="button" class="slick-prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>'
+            });
+
+            // Back to Top Button
+            const backToTopButton = document.querySelector(".back-to-top");
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+
+            backToTopButton.addEventListener("click", scrollToTop);
+
+            // Modal Functionality
+            const modal = document.createElement("div");
+            modal.classList.add("modal");
+            document.body.appendChild(modal);
+
+            const modalContent = document.createElement("img");
+            modalContent.classList.add("modal-content");
+            modal.appendChild(modalContent);
+
+            const closeModal = document.createElement("span");
+            closeModal.classList.add("close");
+            closeModal.innerHTML = "&times;";
+            modal.appendChild(closeModal);
+
+            closeModal.onclick = function() {
+                modal.style.display = "none";
+            };
+
+            const images = document.querySelectorAll(".zoomable");
+            images.forEach(image => {
+                image.onclick = function() {
+                    modal.style.display = "block";
+                    modalContent.src = this.src;
+                };
+            });
+
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+
+            // Initialize Fancybox
+            $('[data-fancybox="gallery"]').fancybox({
+                buttons: [
+                    'slideShow',
+                    'fullScreen',
+                    'thumbs',
+                    'close'
+                ],
+                loop: true,
+                protect: true
+            });
+        });
+    </script>
+</body>
+</html>
